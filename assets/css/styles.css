@@ -335,3 +335,254 @@ blockquote footer {
     font-size: 0.9rem;
     margin: 0;
 }
+
+/* Estilos generales de la sección */
+.section-title {
+    color: #002855; /* Tono azul oscuro para el título */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: #6c757d; /* Gris para el texto */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Sección Visión */
+.vision {
+    background-color: #f8f9fa; /* Fondo blanco para la visión */
+    padding: 60px 0;
+}
+
+.vision img {
+    border-radius: 8px; /* Bordes redondeados a la imagen */
+    height: auto;
+    width: 100%;
+}
+
+/* Sección Misión */
+.mision {
+    background-color: #fff; /* Fondo gris claro para la misión */
+    padding: 60px 0;
+}
+
+.mision-container {
+    flex-direction: row-reverse;
+}
+
+.mision img {
+    border-radius: 8px; /* Bordes redondeados a la imagen */
+    height: auto;
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .vision,
+    .mision {
+        padding: 40px 15px;
+    }
+
+    .vision img,
+    .mision img {
+        height: auto;
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+    }
+}
+
+/* Fondo de la Misión */
+.mission-section {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQb4JF78dEHDfhih0UZ8rHfFHQGO78J9U-LwRN7xf9yVQfD-f"); /* Fondo de la misión */
+    background-position: center;
+    background-size: cover;
+    padding: 100px 15px;
+}
+
+.mission-content {
+    background-color: rgba(0, 40, 85, 0.7); /* Fondo oscuro con transparencia */
+    border-radius: 8px;
+    color: white;
+    padding: 30px;
+}
+
+/* Fondo de la Visión */
+.vision-section {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/334/80/869/city-road-evening-traffic-wallpaper-preview.jpg"); /* Fondo de la visión */
+    background-position: center;
+    background-size: cover;
+    padding: 100px 15px;
+}
+
+.vision-content {
+    background-color: rgba(0, 40, 85, 0.7); /* Fondo oscuro con transparencia */
+    border-radius: 8px;
+    color: white;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .mission-section,
+    .vision-section {
+        padding: 50px 15px;
+    }
+}
+
+/* Sección Servicios */
+.services__item img {
+    margin-bottom: 15px;
+    width: 60px;
+}
+
+.services__item-title {
+    color: #002855;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.services__item-description {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+/* Sección ¿Por qué elegirnos? */
+.why-us__title {
+    color: #002855;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.why-us__title h3 {
+    font-size: 1.2rem;
+}
+
+/* Carousel services */
+
+/* Sección Servicios */
+.services {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.services__title {
+    color: #002855;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.services__item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Establecemos una altura fija para que todas las cards tengan la misma altura */
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    width: 100%; /* Aseguramos que los items se ajusten al espacio */
+}
+
+.services__item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.services__item img {
+    height: 60px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    width: 60px;
+}
+
+.services__item-title {
+    color: #002855;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.services__item p {
+    color: #6c757d;
+    font-size: 1rem;
+    height: 100px; /* Definimos una altura para el texto */
+    margin-bottom: 10px;
+    overflow: hidden; /* Ocultamos el texto que excede */
+}
+
+/* Estilos del Carousel */
+.carousel-inner {
+    padding: 20px 0;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.carousel-item .services__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajustes touch para arrastrar */
+.carousel .carousel-inner {
+    cursor: grab;
+}
+
+.carousel .carousel-inner:active {
+    cursor: grabbing;
+}
+
+/* Dando espacio entre las cards */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos de los Indicadores */
+.carousel-indicators button {
+    background-color: #002855 !important; /* Color de fondo para los puntos */
+    border: none; /* Eliminar borde por defecto */
+    opacity: 0.7; /* Hacer los indicadores ligeramente transparentes */
+    transition:
+        background-color 0.3s ease,
+        opacity 0.3s ease; /* Transición suave para los cambios de color */
+}
+
+.carousel-indicators .active {
+    background-color: #0069d9 !important; /* Color cuando el indicador está activo (un tono azul más brillante) */
+    opacity: 1; /* Hacer el indicador completamente opaco cuando esté activo */
+}
+
+/* Cambiar el color de los indicadores al pasar el mouse */
+.carousel-indicators button:hover {
+    background-color: #004080 !important; /* Azul intermedio al pasar el mouse */
+    opacity: 1; /* Aseguramos que no haya transparencia al hacer hover */
+}
+
+/* Respuesta al espacio en pantallas pequeñas */
+@media (max-width: 768px) {
+    .d-flex {
+        align-items: center;
+        flex-direction: column;
+    }
+    .carousel-item {
+        padding: 10px;
+    }
+}

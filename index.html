@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Encabezado -->
-<!-- Encabezado -->
+   
 <header class="header">
     <nav class="navbar navbar-expand-lg" style="background-color: #002855; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); padding: 15px 0;">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/index.html">
                 <img src="assets/images/logopag3.png" alt="Logo de GlobalLink Solutions" class="header__logo">
             </a>
             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +35,7 @@
                         <a class="nav-link header__menu-link" href="#blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link header__menu-link" href="#contacto">Contacto</a>
+                        <a class="nav-link header__menu-link" href="./pages/contact.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -45,112 +44,223 @@
 </header>
 
 
-
-    <!-- Sección Principal -->
-    <section class="main-banner text-center">
-        <div class="container">
-            <img src="assets/images/logo.jpeg" alt="GlobalLink Solutions Logo" class="main-banner__logo">
-            <h1 class="main-banner__title">Conectamos tu empresa con el mundo</h1>
-            <p class="main-banner__subtitle">Soluciones tecnológicas integrales para tu negocio</p>
-            <a href="#servicios" class="btn-custom">Ver Servicios</a>
+<!-- Sección Misión -->
+<section id="mision" class="mision py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center mision-container">
+            <!-- Texto de Misión -->
+            <div class="col-md-6">
+                <h3 class="section-title">Misión</h3>
+                <p class="section-description">
+                    Proveer servicios en el área de tecnologías de la Información que garanticen la continuidad operativa de nuestros clientes, ofreciéndoles un frente único de contacto y cobertura en toda América Latina y el Caribe.
+                </p>
+            </div>
+            <!-- Imagen Representativa de Misión -->
+            <div class="col-md-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQb4JF78dEHDfhih0UZ8rHfFHQGO78J9U-LwRN7xf9yVQfD-f" alt="Misión" class="img-fluid rounded">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sección Nosotros -->
-    <section id="nosotros" class="about py-5">
-        <div class="container">
-            <h2 class="about__title text-center mb-4">Quiénes Somos</h2>
-            <p class="about__description text-center">
-                Fundada en 2003, GlobalLink Solutions ofrece soluciones de TI personalizadas para empresas en América Latina y el Caribe. Nuestro objetivo es optimizar la infraestructura tecnológica y garantizar la continuidad operativa de nuestros clientes.
-            </p>
+
+<!-- Sección Visión -->
+<section id="vision" class="vision py-5">
+    <div class="container">
+        <div class="row align-items-center vision-container">
+            <!-- Texto de Visión -->
+            <div class="col-md-6">
+                <h3 class="section-title">Visión</h3>
+                <p class="section-description">
+                    Ser una empresa líder en Servicios de Informática en el mercado corporativo de la región, reconocida por la calidad del trabajo, la calidad de sus procesos y su cobertura tanto geográfica como tecnológica. Con este fin, GlobalLink Solution ha incorporado de manera continua profesionales certificados en diversas disciplinas y tecnologías, alcanzando en el 2014 una fuerza que supera 2000 profesionales y con una experiencia que llega a los 20 años en diseño, asesoría, implementación y servicios tecnológicos.
+                </p>
+            </div>
+            <!-- Imagen Representativa de Visión -->
+            <div class="col-md-6">
+                <img src="https://c4.wallpaperflare.com/wallpaper/334/80/869/city-road-evening-traffic-wallpaper-preview.jpg" alt="Visión" class="img-fluid rounded">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sección Servicios -->
-    <section id="servicios" class="services py-5 bg-light">
-        <div class="container">
-            <h2 class="services__title text-center mb-4">Nuestros Servicios</h2>
-            <div class="row text-center">
-                <div class="col-md-4 services__item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3247/3247076.png" alt="Soporte Técnico" class="mb-3">
-                    <h3 class="services__item-title">Soporte Técnico</h3>
-                    <p>Asistencia técnica y mantenimiento para hardware, software y redes.</p>
+
+<section id="servicios" class="services py-5">
+    <div class="container">
+        <h2 class="services__title text-center mb-4">Nuestros Servicios</h2>
+        <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-touch="true">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-between">
+                        <div class="services__item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3247/3247076.png" alt="Soporte Técnico" class="mb-3">
+                            <h3 class="services__item-title">Soporte Técnico</h3>
+                            <p>Asistencia técnica y mantenimiento para hardware, software y redes. Aseguramos que su infraestructura esté siempre operativa.</p>
+                        </div>
+                        <div class="services__item">
+                            <img src="https://www.mgtech.cl/wp-content/uploads/2024/01/outsourcing.png" alt="Outsourcing de TI" class="mb-3">
+                            <h3 class="services__item-title">Outsourcing de TI</h3>
+                            <p>Gestión de infraestructura y soporte al usuario final. Permítanos optimizar las operaciones y reducir costos operativos.</p>
+                        </div>
+                        <div class="services__item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/16210/16210046.png" alt="Ciberseguridad" class="mb-3">
+                            <h3 class="services__item-title">Ciberseguridad</h3>
+                            <p>Soluciones integrales para proteger tus datos e infraestructura tecnológica. Garantizando la seguridad de su empresa.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 services__item">
-                    <img src="https://www.mgtech.cl/wp-content/uploads/2024/01/outsourcing.png" alt="Outsourcing de TI" class="mb-3">
-                    <h3 class="services__item-title">Outsourcing de TI</h3>
-                    <p>Gestión de infraestructura y soporte al usuario final para optimizar operaciones.</p>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-between">
+                        <div class="services__item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1840/1840304.png" alt="Garantías para Fabricantes" class="mb-3">
+                            <h3 class="services__item-title">Servicio de Garantías para Fabricantes</h3>
+                            <p>Estándar de calidad de servicio. Disminuya costos con nuestra propuesta de manejo logístico de partes y equipos regionalmente.</p>
+                        </div>
+                        <div class="services__item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1535/1535642.png" alt="Data Center" class="mb-3">
+                            <h3 class="services__item-title">Data Center</h3>
+                            <p>Maximice el uso de sus recursos en su centro de cómputo y obtenga el mayor rendimiento de sus equipos mediante optimización.</p>
+                        </div>
+                        <div class="services__item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2731/2731163.png" alt="Networking" class="mb-3">
+                            <h3 class="services__item-title">Networking</h3>
+                            <p>Soluciones eficientes e innovadoras para redes robustas y adaptables, siempre en línea con las necesidades futuras de su empresa.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 services__item">
-                    <img src="https://cdn-icons-png.flaticon.com/512/16210/16210046.png" alt="Ciberseguridad" class="mb-3">
-                    <h3 class="services__item-title">Ciberseguridad</h3>
-                    <p>Soluciones integrales para proteger tus datos e infraestructura tecnológica.</p>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-between">
+                        <div class="services__item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2345/2345540.png" alt="Staffing Services" class="mb-3">
+                            <h3 class="services__item-title">Staffing Services</h3>
+                            <p>Disponibilidad continua de talento calificado, con un servicio escalable y continuo para satisfacer los requerimientos de su negocio.</p>
+                        </div>
+                        <div class="services__item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1364/1364177.png" alt="Proyectos" class="mb-3">
+                            <h3 class="services__item-title">Proyectos</h3>
+                            <p>Optimización de recursos para la gestión eficiente de proyectos TI, cumpliendo con los plazos establecidos.</p>
+                        </div>
+                        <div class="services__item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4169/4169563.png" alt="Logística" class="mb-3">
+                            <h3 class="services__item-title">Logística</h3>
+                            <p>Servicio integral de manejo logístico y seguimiento web para repuestos, mejorando la eficiencia operativa en cada etapa.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sección Testimonios -->
-    <section id="testimonios" class="testimonials py-5">
-        <div class="container">
-            <h2 class="testimonials__title text-center mb-4">Testimonios de Clientes</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <p>"Gracias a GlobalLink Solutions, nuestra infraestructura TI nunca estuvo más segura."</p>
-                        <footer class="blockquote-footer">Juan Pérez, CEO de TechCorp</footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <p>"El soporte técnico es increíble. Siempre están disponibles cuando los necesitamos."</p>
-                        <footer class="blockquote-footer">Ana Gómez, Gerente de Operaciones</footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <p>"La migración a la nube fue más fácil de lo que imaginamos gracias a su ayuda."</p>
-                        <footer class="blockquote-footer">Carlos Ruiz, CTO de Innovatech</footer>
-                    </blockquote>
-                </div>
+
+
+
+<!-- Sección ¿Por qué elegirnos? -->
+<section id="porque-nosotros" class="why-us py-5">
+    <div class="container">
+        <h2 class="why-us__title text-center mb-4">¿Por qué elegir GlobalLink Solutions?</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Punto único de contacto</h3>
+                <p>Todos nuestros clientes cuentan con un Account Manager para atender sus requerimientos y velar por el cumplimiento del nivel de servicio acordado (SLA).</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Cobertura Regional</h3>
+                <p>Servicio técnico local en múltiples países lo que le permite manejar de manera fácil los requerimientos de sus oficinas en la región.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Sistema de gestión robusto</h3>
+                <p>Aplicativo WEB para el registro, control y análisis estadístico en sus eventos de servicio, con interfaz configurable para el cliente.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Reducción de Costos</h3>
+                <p>Todas nuestras soluciones son pensadas para optimizar la eficiencia de su empresa.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Experiencia y Flexibilidad</h3>
+                <p>Nuestros años en el mercado nos han dado la experiencia para desarrollar soluciones ajustadas a las necesidades de cada industria.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Certificaciones</h3>
+                <p>Contamos con certificaciones reconocidas a nivel mundial de las marcas más importantes para llevar a cabo proyectos de la mano con las últimas tendencias.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sección Blog -->
-    <section id="blog" class="blog py-5 bg-light">
-        <div class="container">
-            <h2 class="blog__title text-center mb-4">Últimas Publicaciones</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <h3 class="blog__item-title">Transformación Digital</h3>
-                    <p>Cómo las empresas están adoptando nuevas tecnologías para crecer.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="blog__item-title">Ciberseguridad 2024</h3>
-                    <p>Las amenazas más comunes y cómo protegerte de ellas.</p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="blog__item-title">Outsourcing de TI</h3>
-                    <p>Los beneficios de delegar tu infraestructura tecnológica.</p>
-                </div>
+<!-- Sección Testimonios -->
+<section id="testimonios" class="testimonials py-5">
+    <div class="container">
+        <h2 class="testimonials__title text-center mb-4">Testimonios de Clientes</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"Gracias a GlobalLink Solutions, nuestra infraestructura TI nunca estuvo más segura."</p>
+                    <footer class="blockquote-footer">Juan Pérez, CEO de TechCorp</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"El soporte técnico es increíble. Siempre están disponibles cuando los necesitamos."</p>
+                    <footer class="blockquote-footer">Ana Gómez, Gerente de Operaciones</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"La migración a la nube fue más fácil de lo que imaginamos gracias a su ayuda."</p>
+                    <footer class="blockquote-footer">Carlos Ruiz, CTO de Innovatech</footer>
+                </blockquote>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="contact py-5 text-center">
-        <div class="container">
-            <h2 class="contact__title mb-4">Contáctanos</h2>
-            <p>¿Interesado en nuestros servicios? <a href="mailto:info@globallinksolutions.com">Envíanos un correo</a> o llama al +1-800-555-5555.</p>
+<!-- Sección Blog -->
+<section id="blog" class="blog py-5 bg-light">
+    <div class="container">
+        <h2 class="blog__title text-center mb-4">Últimas Publicaciones</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3 class="blog__item-title">Transformación Digital</h3>
+                <p>Cómo las empresas están adoptando nuevas tecnologías para crecer.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="blog__item-title">Ciberseguridad 2024</h3>
+                <p>Las amenazas más comunes y cómo protegerte de ellas.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="blog__item-title">Outsourcing de TI</h3>
+                <p>Los beneficios de delegar tu infraestructura tecnológica.</p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Pie de Página -->
-    <footer class="footer py-4 bg-dark text-center text-white">
-        <p class="footer__text mb-0">© 2024 GlobalLink Solutions. Todos los derechos reservados.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Sección Contacto -->
+<section id="contacto" class="contact py-5 text-center">
+    <div class="container">
+        <h2 class="contact__title mb-4">Contáctanos</h2>
+        <p>¿Interesado en nuestros servicios? <a href="mailto:soporte@globalinksolution.com">Envíanos un correo</a> o llama al <a href="tel:+50585864024">+50585864024</a>.</p>
+    </div>
+</section>
+
+<!-- Pie de Página -->
+<footer class="footer py-4 bg-dark text-center text-white">
+    <p class="footer__text mb-0">© 2024 GlobalLink Solutions. Todos los derechos reservados.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
