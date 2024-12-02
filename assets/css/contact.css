@@ -1,0 +1,66 @@
+/* Estilos para la sección de Cobertura */
+.cobertura {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.region-section {
+    margin-bottom: 50px;
+}
+
+.region-section h3 {
+    color: #002855;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.card-title {
+    color: #002855;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+.row .col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Mejorar la disposición y espacio entre las cards */
+@media (max-width: 768px) {
+    .region-section h3 {
+        text-align: center;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
